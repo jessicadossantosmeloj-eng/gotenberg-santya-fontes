@@ -11,7 +11,7 @@ RUN apt-get update \
     fonts-texgyre \
   && mkdir -p /usr/local/share/fonts/custom
 
-COPY fontes/*.ttf /usr/local/share/fonts/custom/
+COPY fonts/*.ttf /usr/local/share/fonts/custom/
 
 RUN fc-cache -f -v \
   && fc-match "Times New Roman" \
